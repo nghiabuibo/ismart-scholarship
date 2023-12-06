@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  webserver:
+    # image: php:apache
+    build: .
+    container_name: webserver
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/var/www/html
