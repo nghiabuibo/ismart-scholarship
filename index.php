@@ -5,21 +5,20 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport"/>
 	<link href="http://gmpg.org/xfn/11" rel="profile"/>
 	<title>
-		Tra cứu học bổng - Ivy Global School
+		Tra cứu học bổng - iSmart Online
 	</title>
 	<meta content="vi_VN" property="og:locale"/>
 	<meta content="article" property="og:type"/>
-	<meta content="Tra cứu học bổng - Ivy Global School" property="og:title"/>
-	<meta content="Tra cứu học bổng - Ivy Global School" property="og:description"/>
-	<meta content="Ivy Global School" property="og:site_name"/>
+	<meta content="Tra cứu học bổng - iSmart Online" property="og:title"/>
+	<meta content="Tra cứu học bổng - iSmart Online" property="og:description"/>
+	<meta content="iSmart Online" property="og:site_name"/>
 	<meta content="assets/imgs/og-image.jpg" property="og:image"/>
 	<meta content="summary" name="twitter:card"/>
-	<meta content="Tra cứu học bổng - Ivy Global School" name="twitter:description"/>
-	<meta content="Tra cứu học bổng - Ivy Global School" name="twitter:title"/>
+	<meta content="Tra cứu học bổng - iSmart Online" name="twitter:description"/>
+	<meta content="Tra cứu học bổng - iSmart Online" name="twitter:title"/>
 	<meta content="assets/imgs/bg.jpg" name="twitter:image"/>
-	<meta name="msapplication-TileImage" content="https://ivyglobalschool.org/media/0scluqrx/logo-favicon.ico" />
-	<link rel="shortcut icon" href="https://ivyglobalschool.org/media/0scluqrx/logo-favicon.ico" type="image/x-icon" />
-	<link rel="apple-touch-icon" href="https://ivyglobalschool.org/media/0scluqrx/logo-favicon.ico">
+	<link rel="icon" type="image/png" href="https://ismart.edu.vn/themes/ismart/img/favicon.png"/>
+    <link rel="apple-touch-icon" href="https://ismart.edu.vn/themes/ismart/img/favicon.png"/>
 
 	<!-- CSS only -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -36,9 +35,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="section-col col-xl-6 col-lg-8 col-md-10 offset-xl-3 offset-lg-2 offset-md-1">
+				<img class="logo" src="assets/imgs/ismart-logo.svg" />
 				<div class="search">
 					<form action="search.php" method="POST" id="search_form">
-						<p class="textmuted fw-bold h6 mb-3 text-center">TRA CỨU HỌC BỔNG IVY GLOBAL SCHOOL</p>
+						<h1 class="textmuted fw-bold h1 text-center title">TRA CỨU HỌC BỔNG</h1>
 						<div class="row g-3 mb-4">
 							<div class="col-md-6">
 								<input type="text" class="form-control" placeholder="Họ và tên" aria-label="Họ và tên" name="name" required="required">

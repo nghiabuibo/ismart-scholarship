@@ -23,3 +23,4 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN composer --version
 
 # Your Dockerfile can include additional configurations and steps as needed
+ENTRYPOINT  composer install --no-interaction && chown -R www-data /var/www/html/vendor && apachectl -D FOREGROUND

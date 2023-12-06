@@ -35,9 +35,9 @@ $spreadsheet_json = get_spreadsheet_data($template);
 $spreadsheet_data = json_decode($spreadsheet_json)->values;
 
 foreach ($spreadsheet_data as $index => $contestant_info) {
-	$search_phone = $contestant_info[$cols['SỐ ĐIỆN THOẠI']] ?? '';
+	$search_phone = $contestant_info[$cols['Số điện thoại']] ?? '';
 	if (
-		compare_name($name, $contestant_info[$cols['HỌ VÀ TÊN']])
+		compare_name($name, $contestant_info[$cols['Họ và tên']])
 		&& compare_phone($phone_trimmed, $search_phone)
 	) {
 		$result = [
@@ -47,18 +47,18 @@ foreach ($spreadsheet_data as $index => $contestant_info) {
 					'STT',
 					'Họ và tên',
 					'Số điện thoại',
+					'Email'
 				],
 				'params' => [
 					$contestant_info[$cols['STT']] ?? '',
-					$contestant_info[$cols['HỌ VÀ TÊN']] ?? '',
-					$contestant_info[$cols['SỐ ĐIỆN THOẠI']] ?? '',
+					$contestant_info[$cols['Họ và tên']] ?? '',
+					$contestant_info[$cols['Số điện thoại']] ?? '',
+					$contestant_info[$cols['Email']] ?? '',
 				],
 				'additional_info' => [
-					$contestant_info[$cols['HỆ HỌC BỔNG (tiếng Việt)']] ?? '',
-					$contestant_info[$cols['HỆ HỌC BỔNG (tiếng Anh)']] ?? '',
-					$contestant_info[$cols['MỨC HỌC BỔNG']] ?? '',
-					$contestant_info[$cols['THỜI HẠN']] ?? '',
-					$contestant_info[$cols['DATE']] ?? '',
+					$contestant_info[$cols['Học bổng']] ?? '',
+					$contestant_info[$cols['Date']] ?? '',
+					$contestant_info[$cols['Thời hạn áp dụng']] ?? '',
 				]
 			]
 		];
