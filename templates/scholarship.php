@@ -17,10 +17,10 @@ $pdf = new Fpdi('L', 'px', $pageLayout['scholarship']['dimension'], true, 'UTF-8
 
 // set document information
 $pdf->SetCreator(PDF_CREATOR);
-$pdf->SetAuthor('Ivy Global School');
-$pdf->SetTitle('IGS Scholarship');
-$pdf->SetSubject('Ivy Global School');
-$pdf->SetKeywords('Ivy Global School, Scholarship');
+$pdf->SetAuthor('iSmart Online');
+$pdf->SetTitle('iSmart Online Scholarship');
+$pdf->SetSubject('iSmart Online');
+$pdf->SetKeywords('iSmart Online, Scholarship');
 
 // remove default header/footer
 $pdf->setPrintHeader(false);
@@ -80,7 +80,7 @@ $pdf->writeHTMLCell(300, 100, 532, 954, $date_signed);
 // ---------------------------------------------------------
 
 //Close and output PDF document
-$pdf->Output(vn_to_en($name, true).'_IGS_Scholarship.pdf', 'I');
+$pdf->Output(vn_to_en($name, true).'_iSmart_Online_Scholarship.pdf', 'I');
 
 //============================================================+
 // END OF FILE
