@@ -35,7 +35,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="section-col col-xl-6 col-lg-8 col-md-10 offset-xl-3 offset-lg-2 offset-md-1">
-				<img class="logo" src="/assets/imgs/ismart-logo.svg" />
+				<img class="logo" src="/assets/imgs/logo.png" />
 				<div class="search">
 					<form action="/search.php" method="POST" id="search_form">
 						<h1 class="textmuted fw-bold h1 text-center title">TRA CỨU HỌC BỔNG</h1>
