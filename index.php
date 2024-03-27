@@ -12,11 +12,11 @@
 	<meta content="Tra cứu học bổng - iSmart Online" property="og:title"/>
 	<meta content="Tra cứu học bổng - iSmart Online" property="og:description"/>
 	<meta content="iSmart Online" property="og:site_name"/>
-	<meta content="assets/imgs/og-image.jpg" property="og:image"/>
+	<meta content="/assets/imgs/og-image.jpg" property="og:image"/>
 	<meta content="summary" name="twitter:card"/>
 	<meta content="Tra cứu học bổng - iSmart Online" name="twitter:description"/>
 	<meta content="Tra cứu học bổng - iSmart Online" name="twitter:title"/>
-	<meta content="assets/imgs/bg.jpg" name="twitter:image"/>
+	<meta content="/assets/imgs/bg.jpg" name="twitter:image"/>
 	<link rel="icon" type="image/png" href="https://ismart.edu.vn/themes/ismart/img/favicon.png"/>
     <link rel="apple-touch-icon" href="https://ismart.edu.vn/themes/ismart/img/favicon.png"/>
 
@@ -29,15 +29,15 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 	<div class="container">
 		<div class="row">
 			<div class="section-col col-xl-6 col-lg-8 col-md-10 offset-xl-3 offset-lg-2 offset-md-1">
-				<img class="logo" src="assets/imgs/ismart-logo.svg" />
+				<img class="logo" src="/assets/imgs/ismart-logo.svg" />
 				<div class="search">
-					<form action="search.php" method="POST" id="search_form">
+					<form action="/search.php" method="POST" id="search_form">
 						<h1 class="textmuted fw-bold h1 text-center title">TRA CỨU HỌC BỔNG</h1>
 						<div class="row g-3 mb-4">
 							<div class="col-md-6">
@@ -46,11 +46,7 @@
 							<div class="col-md-6">
 								<input type="tel" pattern="^(0|\+84|84)\d{9}$" class="form-control" placeholder="Số điện thoại" aria-label="Số điện thoại" name="phone">
 							</div>
-							<div class="col-md-3 mb-2 d-none">
-								<select name="template" class="form-select" required="required">
-									<option value="scholarship" selected="selected">Certificate</option>
-								</select>
-							</div>
+							<input type="hidden" name="template" value="<?php echo !empty($template) ? $template : 'scholarship'; ?>" />
 						</div>
 						<div class="row">
 							<div class="col-12">
@@ -88,6 +84,6 @@
 
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-	<script type="text/javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="/assets/js/main.js"></script>
 </body>
 </html>

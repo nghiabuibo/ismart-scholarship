@@ -47,24 +47,27 @@ foreach ($spreadsheet_data as $index => $contestant_info) {
 					'STT',
 					'Họ và tên',
 					'Số điện thoại',
-					'Email'
 				],
 				'params' => [
 					$contestant_info[$cols['STT']] ?? '',
 					$contestant_info[$cols['Họ và tên']] ?? '',
 					$contestant_info[$cols['Số điện thoại']] ?? '',
-					$contestant_info[$cols['Email']] ?? '',
 				],
-				'additional_info' => [
-					$contestant_info[$cols['Học bổng']] ?? '',
-					$contestant_info[$cols['Date']] ?? '',
-					$contestant_info[$cols['Thời hạn áp dụng']] ?? '',
-				]
+				'additional_info' => []
 			]
 		];
 
+		if (isset($cols['Email'])) {
+			$result['success']['headers'][] = 'Email';
+			$result['success']['params'][] = $contestant_info[$cols['Email']] ?? '';
+		}
+		
+		foreach ($cols as $key => $col_index) {
+			$result['success']['additional_info'][$key] = $contestant_info[$col_index] ?? '';
+		}
+
 		$template_jwt = JWT::encode($result, $config['api_key'], 'HS256');
-		$template_url = '<a target="_blank" class="btn btn-success btn-sm" href="download.php?jwt='.$template_jwt.'"><i class="bi bi-download"></i></a>';
+		$template_url = '<a target="_blank" class="btn btn-success btn-sm" href="/download.php?jwt='.$template_jwt.'"><i class="bi bi-download"></i></a>';
 
 		$result['success']['headers'][] = 'Tải Học bổng';
 		$result['success']['params'][] = $template_url;

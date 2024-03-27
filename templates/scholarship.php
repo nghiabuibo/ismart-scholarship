@@ -1,9 +1,9 @@
 <?php
 
-$name = $params[1];
-$scholarship_amount = $additional_info[0];
-$date_signed = $additional_info[1];
-$date_expired = $additional_info[2];
+$name = $additional_info->{'Họ và tên'};
+$scholarship_amount = $additional_info->{'Học bổng'};
+$date_signed = $additional_info->{'Date'};
+$date_expired = $additional_info->{'Thời hạn áp dụng'};
 
 $pageLayout = [
 	'scholarship' => [
